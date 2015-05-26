@@ -1,12 +1,13 @@
 language: cpp
 sudo: true
 compiler:
-- gcc
+  - gcc
 os:
-- linux
+  - linux
+  - osx
 before_install:
-- unset CXX
-- unset CC
+  - unset CXX
+  - unset CC
 script: bash build.sh
 env:
   global:
